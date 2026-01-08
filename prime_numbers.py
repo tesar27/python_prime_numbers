@@ -28,13 +28,13 @@ def writeIntoFile(fileName, res):
                 f.write(str(res[i]) + ',')
 
 if __name__ == '__main__':
-    print('--Welcome to the prime numbers calculator up to your given number! :)')
+    print('Welcome to the prime numbers calculator up to your given number! :)')
     numberInput = int(input('Now give your desired limit, until which we calculate all the primer numbers: '))
     fileNameInput = input('Now give the file name (with extension) you want to save the results in: ')
-    print(f'--Printing primer number within the range 1 to {numberInput}--')
+    print(f'*** Printing primer number within the range 1 to {numberInput} ***')
     res = []
     res = calc_primes(numberInput)
     upUntilValue = numberInput
     writeIntoFile(fileNameInput, res)
-    print('--Finished writing into the file--')
+    print('*** Finished writing into the file ***')
     print(res)
